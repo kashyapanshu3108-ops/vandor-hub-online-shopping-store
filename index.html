@@ -63,8 +63,35 @@
         </div>
       </div>
     </div>
+</aside>
 
-
+<!-- /sidebar -->
+ 
+ 
+  <!-- ═══════════════════════════════════════════
+       MAIN
+  ════════════════════════════════════════════ -->
+  <div class="main">
+ 
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="search-bar" style="flex:1;max-width:460px;">
+        <span style="font-size:15px;">🔍</span>
+        <input type="text" id="search-input" placeholder="Search products, vendors…" oninput="handleSearch(this.value)">
+        <span class="ai-tag">AI</span>
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn" onclick="togglePanel('cart-panel')" title="Cart">
+          🛒<span class="badge-dot" id="cart-dot" style="display:none"></span>
+        </button>
+        <button class="icon-btn" onclick="togglePanel('wish-panel')" title="Wishlist">❤️</button>
+        <button class="icon-btn" onclick="showNotifications()" title="Notifications">
+          🔔<span class="badge-dot"></span>
+        </button>
+        <div class="avatar" id="topbar-avatar"
+             style="background:var(--brand);cursor:pointer;width:32px;height:32px;font-size:12px;">AK</div>
+      </div>
+    </div>
 
 
 
