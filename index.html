@@ -19,7 +19,37 @@
       </div>
       <div class="logo-text">Vendor<span>Hub</span></div>
     </div>
-
+<!-- // role switcher -->
+ <div style="padding:12px 12px 8px;">
+      <div class="role-label">Switch Role</div>
+      <div style="display:flex;flex-direction:column;gap:3px;">
+ 
+        <button class="role-btn active" onclick="switchRole('buyer')" id="role-buyer">
+          <div class="role-icon">🛍️</div>
+          <div>
+            <div>Buyer</div>
+            <div style="font-size:10px;opacity:0.7;font-weight:400;">Rahul Sharma</div>
+          </div>
+        </button>
+ 
+        <button class="role-btn" onclick="switchRole('seller')" id="role-seller">
+          <div class="role-icon">🏪</div>
+          <div>
+            <div>Seller</div>
+            <div style="font-size:10px;opacity:0.7;font-weight:400;">TechZone Store</div>
+          </div>
+        </button>
+ 
+        <button class="role-btn" onclick="switchRole('admin')" id="role-admin">
+          <div class="role-icon">⚙️</div>
+          <div>
+            <div>Admin</div>
+            <div style="font-size:10px;opacity:0.7;font-weight:400;">Platform Admin</div>
+          </div>
+        </button>
+ 
+      </div>
+    </div>
 
 
 
