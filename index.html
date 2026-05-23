@@ -281,11 +281,19 @@
 </div>
 
 
-
-
-
-
-
+<!-- ═══════════════════════════════════════════
+     SCRIPTS  (order matters)
+════════════════════════════════════════════ -->
+<script src="js/data.js"></script>
+<script src="js/buyer.js"></script>
+<script src="js/seller.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // Boot the app
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+ 
 
  </head>
 <body>

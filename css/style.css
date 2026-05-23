@@ -1,0 +1,21 @@
+/* =====================================================
+   VendorHub — Main Stylesheet
+   ===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+ 
+
+:root {
+  --brand: #FF4F00; --brand-dark: #CC3D00; --brand-light: #FFF0EB;
+  --accent: #0047FF; --accent-light: #EBF0FF;
+  --success: #00A86B; --success-light: #E6FAF3;
+  --warning: #F59E0B; --warning-light: #FFFBEB;
+  --danger: #EF4444; --danger-light: #FEF2F2;
+  --bg: #F7F6F3; --surface: #FFFFFF; --surface2: #F0EEE9;
+  --text: #1A1916; --text2: #5C5A55; --text3: #9B9890;
+  --border: #E2DFDA;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06);
+  --radius: 12px; --radius-sm: 8px; --radius-lg: 20px;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
