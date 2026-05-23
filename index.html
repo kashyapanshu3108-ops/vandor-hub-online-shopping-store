@@ -238,7 +238,47 @@
   </div>
 </div>
  
-
+ 
+<!-- ═══════════════════════════════════════════
+     PAYMENT MODAL
+════════════════════════════════════════════ -->
+<div class="modal" id="payment-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title">💳 Sandbox Payment</div>
+      <button class="btn btn-ghost btn-sm" onclick="closeModal('payment-modal')">✕</button>
+    </div>
+ 
+    <div style="background:var(--bg);border-radius:var(--radius);padding:16px;margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:600;color:var(--text3);margin-bottom:8px;">ORDER SUMMARY</div>
+      <div id="payment-summary"></div>
+    </div>
+ 
+    <div class="form-group">
+      <label class="form-label">Card Number</label>
+      <input class="form-input" value="XXXX XXXX XXXX XX42" placeholder="4242 4242 4242 4242">
+      <div class="form-hint">✅ Test card — Razorpay / Stripe sandbox</div>
+    </div>
+ 
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Expiry</label>
+        <input class="form-input" value="12/26" placeholder="MM/YY">
+      </div>
+      <div class="form-group">
+        <label class="form-label">CVV</label>
+        <input class="form-input" value="123" placeholder="123">
+      </div>
+    </div>
+ 
+    <button class="btn btn-primary btn-lg" style="width:100%;margin-top:8px;" onclick="processPayment()">
+      Pay Now 🔐
+    </button>
+    <div style="text-align:center;margin-top:12px;font-size:11px;color:var(--text3);">
+      🔒 Secured by Razorpay Sandbox
+    </div>
+  </div>
+</div>
 
 
 
