@@ -172,6 +172,72 @@
   <div class="modal-box" id="product-modal-box"></div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     ADD / EDIT PRODUCT MODAL  (Seller)
+════════════════════════════════════════════ -->
+<div class="modal" id="add-product-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title" id="product-modal-title">Add New Product</div>
+      <button class="btn btn-ghost btn-sm" onclick="closeModal('add-product-modal')">✕</button>
+    </div>
+ 
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Product Name</label>
+        <input class="form-input" placeholder="e.g. Wireless Headphones" id="p-name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Category</label>
+        <select class="form-input form-select" id="p-cat">
+          <option>Electronics</option><option>Fashion</option>
+          <option>Home & Living</option><option>Sports</option>
+          <option>Books</option><option>Food</option>
+        </select>
+      </div>
+    </div>
+ 
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Price (₹)</label>
+        <input class="form-input" type="number" placeholder="999" id="p-price">
+        <div class="form-hint">💡 AI suggests ₹2,299–₹2,799 based on similar products</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Stock</label>
+        <input class="form-input" type="number" placeholder="50" id="p-stock">
+      </div>
+    </div>
+ 
+    <div class="form-group">
+      <label class="form-label">Description</label>
+      <textarea class="form-input" rows="3" placeholder="Describe your product…"
+                id="p-desc" style="resize:vertical;"></textarea>
+    </div>
+ 
+    <div class="form-group">
+      <label class="form-label">Product Image</label>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;">
+        <div class="thumb active" onclick="selectEmoji(this,'📱')">📱</div>
+        <div class="thumb" onclick="selectEmoji(this,'💻')">💻</div>
+        <div class="thumb" onclick="selectEmoji(this,'🎧')">🎧</div>
+        <div class="thumb" onclick="selectEmoji(this,'📷')">📷</div>
+        <div class="thumb" onclick="selectEmoji(this,'⌚')">⌚</div>
+        <div class="thumb" onclick="selectEmoji(this,'👟')">👟</div>
+        <div class="thumb" onclick="selectEmoji(this,'👗')">👗</div>
+        <div class="thumb" onclick="selectEmoji(this,'🏠')">🏠</div>
+        <div class="thumb" onclick="selectEmoji(this,'⚽')">⚽</div>
+        <div class="thumb" onclick="selectEmoji(this,'📚')">📚</div>
+      </div>
+    </div>
+ 
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:4px;">
+      <button class="btn btn-secondary" onclick="closeModal('add-product-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveProduct()">Save Product</button>
+    </div>
+  </div>
+</div>
+ 
 
 
 
