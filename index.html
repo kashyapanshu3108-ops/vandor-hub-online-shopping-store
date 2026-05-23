@@ -107,7 +107,40 @@
 ════════════════════════════════════════════ -->
 <div class="overlay" id="overlay" onclick="closeAll()"></div>
   
-
+<!-- ═══════════════════════════════════════════
+     OVERLAY (shared backdrop)
+════════════════════════════════════════════ -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+ 
+ 
+<!-- ═══════════════════════════════════════════
+     CART PANEL
+════════════════════════════════════════════ -->
+<div class="panel" id="cart-panel">
+  <div class="panel-header">
+    <div class="panel-title">
+      🛒 My Cart
+      <span style="font-size:13px;color:var(--text3);font-weight:400;" id="cart-count-label">(0 items)</span>
+    </div>
+    <button class="btn btn-ghost btn-sm" onclick="closeAll()">✕</button>
+  </div>
+  <div class="panel-body" id="cart-body">
+    <div class="empty-state">
+      <div class="empty-icon">🛒</div>
+      <div class="empty-title">Cart is empty</div>
+      <div class="empty-sub">Add some products!</div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+      <span class="text-sm text-muted">Subtotal</span>
+      <span style="font-family:var(--font-display);font-weight:700;font-size:18px;" id="cart-total">₹0</span>
+    </div>
+    <button class="btn btn-primary btn-lg" style="width:100%;" onclick="goToCheckout()">
+      Proceed to Checkout →
+    </button>
+  </div>
+</div>
 
 
 
