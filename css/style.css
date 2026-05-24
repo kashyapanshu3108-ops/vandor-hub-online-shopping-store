@@ -19,3 +19,36 @@
   --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
 }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background: var(--bg); color: var(--text); min-height: 100vh; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.app { display: flex; height: 100vh; overflow: hidden; }
+.sidebar { width: 240px; background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; }
+.main { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+.topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; height: 60px; display: flex; align-items: center; gap: 16px; flex-shrink: 0; position: sticky; top: 0; z-index: 10; }
+.content { padding: 24px; flex: 1; }
+.logo { padding: 20px 20px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 36px; height: 36px; background: var(--brand); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-icon svg { width: 20px; height: 20px; fill: white; }
+.logo-text { font-family: var(--font-display); font-size: 18px; font-weight: 800; letter-spacing: -0.5px; }
+.logo-text span { color: var(--brand); }
+.role-btn { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); border: none; background: none; cursor: pointer; font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--text2); width: 100%; text-align: left; transition: all 0.15s; margin-bottom: 3px; }
+.role-btn:hover { background: var(--bg); color: var(--text); }
+.role-btn.active { background: var(--brand-light); color: var(--brand); }
+.role-btn .role-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+.role-btn.active .role-icon { background: var(--brand); color: white; }
+.role-btn:not(.active) .role-icon { background: var(--surface2); }
+.role-label { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text3); padding: 0 12px 4px; }
+.nav { flex: 1; padding: 8px 12px; overflow-y: auto; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); cursor: pointer; font-size: 13px; font-weight: 400; color: var(--text2); transition: all 0.15s; margin-bottom: 2px; border: none; background: none; width: 100%; text-align: left; }
+.nav-item:hover { background: var(--bg); color: var(--text); }
+.nav-item.active { background: var(--bg); color: var(--text); font-weight: 500; }
+.nav-item .nav-icon { font-size: 16px; width: 20px; text-align: center; opacity: 0.7; }
+.nav-item.active .nav-icon { opacity: 1; }
+.nav-badge { margin-left: auto; background: var(--brand); color: white; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 10px; }
+.user-bar { padding: 12px; border-top: 1px solid var(--border); }
+.user-card { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: var(--radius-sm); }
+.avatar { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: white; flex-shrink: 0; }
+.user-info { flex: 1; min-width: 0; }
