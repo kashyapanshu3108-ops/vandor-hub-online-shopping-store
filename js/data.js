@@ -20,7 +20,12 @@ const STATE = {
     { id:10, emoji:'🎮', name:'PS5 DualSense Controller', vendor:'GamingZone',   price:6499,  original:7499,  rating:4.8, reviews:1456, category:'Electronics',   stock:19,  badge:'hot',  desc:'Adaptive triggers and haptic feedback.' },
     { id:11, emoji:'☕', name:'Nespresso Vertuo Pop',     vendor:'CafeCorner',   price:8999,  original:10999, rating:4.5, reviews:342,  category:'Home & Living', stock:27,  badge:'sale', desc:'5-size coffee brewing at the touch of a button.' },
     { id:12, emoji:'🎵', name:'JBL Charge 5 Speaker',    vendor:'AudioZone',    price:14999, original:16999, rating:4.7, reviews:891,  category:'Electronics',   stock:31,  badge:null,   desc:'Waterproof Bluetooth speaker with 20-hr playtime.' },
-  ],
+ 
+
+
+
+
+],
   vendorProducts: [
     { id:101, emoji:'📱', name:'iPhone 15 Pro Case',      price:999,  stock:45, orders:128, revenue:127872, category:'Electronics', badge:'hot'  },
     { id:102, emoji:'💻', name:'Laptop Stand Aluminium',  price:2499, stock:3,  orders:67,  revenue:167433, category:'Electronics', badge:'new'  },
