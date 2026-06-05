@@ -114,10 +114,10 @@ vendorhub/
 ### Option 1 — Seedha Browser Mein (Sabse Easy)
 ```bash
 # 1. Repository clone karo
-git clone https://github.com/kashyapanshu3108-ops/vendorhub.git
+git clone https://github.com/kashyapanshu3108-ops/vandor-hub-online-shopping-store.git
 
 # 2. Folder mein jao
-cd vendorhub
+cd open vanader
 
 # 3. index.html browser mein kholo
 # Windows: start index.html
